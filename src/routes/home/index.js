@@ -1,11 +1,8 @@
-import { h } from 'preact';
+import { html } from 'htm/preact';
 import style from './style.css';
 import CloseButton from '../../components/closeButton';
 import Blur from '../../components/blur';
 import Quiz from '../../components/quiz';
-
-{/* const JSXEelement = <span>test</span>; */ }
-{/* <iframe src="https://adv-1-jcngfiq1l-mazzulloandrea.vercel.app/" /> */ }
 
 const Home = () => {
   function close() {
@@ -18,19 +15,19 @@ const Home = () => {
     }
   };
 
-  return (
-    <div id="animation" class={style.container}>
-      <div class={style.closeContainer}>
-        <CloseButton closeAnimation={(evt) => close()} />
+  return html`
+    <div id="animation" class=${style.container}>
+      <div class=${style.closeContainer}>
+        <${CloseButton} closeAnimation=${(evt) => close()} />
       </div>
-      <div class={style.blurSection} onclick={() => window.open("http://www.google.it")}>
-        <Blur />
+      <div class=${style.blurSection} onClick=${() => window.open("http://www.google.it")}>
+        <${Blur} />
       </div>
-      <div class={style.quizSection} onclick={() => window.open("http://www.google.it")}>
-        <Quiz />
+      <div class=${style.quizSection} onClick=${() => window.open("http://www.google.it")}>
+        <${Quiz} />
       </div>
     </div>
-  );
+  `
 }
 
 export default Home;
