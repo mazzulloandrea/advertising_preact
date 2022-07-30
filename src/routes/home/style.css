@@ -1,0 +1,61 @@
+@keyframes enterLeft {
+  0% {
+    left: -25vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes exitLeft {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -25vw;
+  }
+}
+
+/**/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 32vh;
+  position: relative;
+  left: 0vw;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  animation: enterLeft 2s;
+}
+
+.enter {
+  animation: enterLeft 2s;
+}
+
+.exit {
+  animation: exitLeft 2s;
+}
+
+.closeContainer {
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+  width: 2vw;
+  height: 2vw;
+  z-index: 99;
+}
+
+.blurSection {
+  position: relative;
+  height: 25vh;
+  width: 100%;
+  margin-top: -5vh;
+}
+
+.quizSection {
+  position: relative;
+  height: 10vh;
+  width: 100%;
+}

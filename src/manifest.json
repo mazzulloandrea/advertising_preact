@@ -1,0 +1,43 @@
+{
+  "name": "adv",
+  "short_name": "my-project",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#673ab8",
+  "images": [
+    {
+      "src": "/assets/images/logo1.png",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/assets/images/logo2.png",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/assets/images/logo3.png",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/assets/images/logo4.png",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/assets/images/logo5.png",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/assets/images/logo6.png",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/assets/images/car.png",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/close.png",
+      "type": "image/png"
+    }
+  ]
+}
