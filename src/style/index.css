@@ -1,7 +1,7 @@
 html,
 body {
-  height: 32vh;
-  width: 25vw;
+  /* height: 32vh; */
+  /* width: 25vw; */
   padding: 0;
   margin: 0;
   background: #FAFAFA;
@@ -10,6 +10,7 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 * {
@@ -17,9 +18,11 @@ body {
 }
 
 #app {
-  width: 25vw;
-  height: 32vh;
+  /* width: 25vw; */
+  /* height: 32vh;
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 40%; */
+  width: 100vw;
+  height: 100vh;
 }
