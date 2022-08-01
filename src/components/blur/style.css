@@ -30,7 +30,6 @@
 }
 
 .focus:before {
-  /* content: url('../../assets/images/car.png');© */
   filter: blur(20px);
   background-image: url('../../assets/images/car.png');
   background-size: cover;
@@ -59,7 +58,6 @@
   height: 85vh;
   top: 0;
   left: 0;
-  /* background: #89cb66; */
   animation: maskMove var(--animation-duration) linear infinite alternate;
 }
 
